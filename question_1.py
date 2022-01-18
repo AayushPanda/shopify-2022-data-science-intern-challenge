@@ -1,3 +1,9 @@
+"""
+Aayush Panda's submission for the Shopify Summer 2022 Data Science Intern Challenge.
+
+dataset.csv was added for convenience of testing.
+"""
+
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
