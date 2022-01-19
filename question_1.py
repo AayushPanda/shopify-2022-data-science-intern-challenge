@@ -1,7 +1,7 @@
 """
 Aayush Panda's submission for the Shopify Summer 2022 Data Science Intern Challenge.
 
-dataset.csv was added for convenience of testing.
+dataset1.csv was added for convenience of testing.
 """
 
 import matplotlib.pyplot as plt
@@ -12,7 +12,7 @@ import pandas as pd
 
 # Recreating problematic calculation
 
-data = pd.DataFrame(pd.read_csv("dataset.csv"))
+data = pd.DataFrame(pd.read_csv("dataset1.csv"))
 
 print('Question 1 - Part A')
 print('Naive calculation of AOV: ', end='')

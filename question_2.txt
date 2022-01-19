@@ -1,0 +1,26 @@
+Question 2
+
+Part A:
+
+SQL query:
+SELECT COUNT(*) FROM Orders WHERE ShipperID=(SELECT ShipperID FROM Shippers WHERE ShipperName="Speedy Express");
+
+Numerical answer: 54
+
+
+
+Part B:
+
+SQL query:
+SELECT LastName FROM Employees WHERE EmployeeID=(SELECT EmployeeID FROM (SELECT EmployeeID,
+COUNT(EmployeeID) as "EmployeeIDCount" FROM Orders GROUP BY EmployeeID ORDER BY "EmployeeIDCount" DESC) LIMIT 1);
+
+Numerical answer: Peacock
+
+
+
+Part C:
+
+SQL query:
+
+
