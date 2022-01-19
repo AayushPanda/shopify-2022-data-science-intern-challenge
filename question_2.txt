@@ -22,5 +22,11 @@ Numerical answer: Peacock
 Part C:
 
 SQL query:
+SELECT ProductName FROM Products WHERE ProductID=(
+SELECT ProductID FROM (SELECT ProductID,COUNT(ProductID) as "ProductIDCount" FROM(
+SELECT ProductID FROM OrderDetails WHERE OrderID IN(
+SELECT OrderID from Orders WHERE CustomerID IN(
+SELECT CustomerID from Customers WHERE Country='Germany')))
+GROUP BY ProductID ORDER BY "ProductIDCount" DESC) LIMIT 1)
 
-
+Numerical answer: Gorgonzola Telino
